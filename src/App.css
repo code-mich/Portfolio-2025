@@ -7,6 +7,7 @@
 
 	/* colours */
 	--color-accent: #32213a;
+	/* #552b69 */
 }
 
 #root {
@@ -15,7 +16,6 @@
 	flex-direction: column;
 	justify-content: center;
 	height: 100%;
-	/* padding: 2rem 0; */
 	margin: 0 auto;
 }
 

@@ -1,5 +1,3 @@
-import React from "react";
-
 export function About() {
 	return (
 		<section
@@ -13,8 +11,8 @@ export function About() {
 				>
 					<img src="/assets/dog-icon.svg" alt="Icon of a dog" />
 				</div>
-				<div className="w-full flex flex-col text-l px-8 md:w-7/10 md:text-xl md:px-0">
-					<h2 className="text-xl tracking-wide text-center my-2 md:text-2xl">
+				<div className="w-full flex flex-col text-l px-8 md:w-7/10 lg:text-xl md:px-0">
+					<h2 className="text-xl tracking-wide text-center my-2 lg:text-2xl">
 						Hi there! I'm Michelle 👋
 					</h2>
 
