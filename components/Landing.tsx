@@ -7,13 +7,13 @@ export function Landing() {
 			<img
 				src="/assets/header-bg.jpg"
 				alt="Image of a pomeranian wearing glasses looking at a tablet."
-				className="w-full h-auto opacity-50 object-cover"
+				className="max-w-full w-full h-auto opacity-50 object-cover"
 			/>
-			<div className="absolute flex flex-col bottom-1/20 left-1/20">
-				<h1 className="text-4xl font-bold uppercase tracking-widest py-6">
+			<div className="absolute flex flex-col bottom-1/15 left-1/15">
+				<h1 className="text-3xl uppercase tracking-widest py-3 sm:py-6 md:text-4xl">
 					michelle w.
 				</h1>
-				<h2 className="text-2xl tracking-widest">Frontend developer</h2>
+				<h2 className="text-xl tracking-widest ml-4">Software developer</h2>
 			</div>
 		</header>
 	);
