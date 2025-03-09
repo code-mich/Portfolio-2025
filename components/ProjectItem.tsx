@@ -32,11 +32,9 @@ export function ProjectItem({
 }: Props) {
 	return (
 		<li className="flex flex-col justify-between px-8 my-4 md:flex-row md:px-0">
-			<img
-				src={image}
-				alt={imageAlt}
-				className="w-2/3 self-center my-2 sm:w-1/3"
-			/>
+			<div className="w-2/3 flex justify-center self-center my-2 sm:w-1/3">
+				<img src={image} alt={imageAlt} className="max-h-[27rem] h-auto" />
+			</div>
 			<div className="flex flex-col md:w-2/3 md:mx-8 lg:justify-center xl:w-1/2">
 				<h3 className="text-xl text-center my-2 lg:text-2xl">{name}</h3>
 				<p className="text-center uppercase">
@@ -65,7 +63,7 @@ export function ProjectItem({
 				{projectLinks.map((project) => (
 					<div className="flex justify-center uppercase mt-2">
 						<a
-							className="text-white tracking-wide text-center p-2 mr-1 my-2 bg-accent border-2 border-accent duration-300 ease-in hover:bg-white hover:text-accent"
+							className="text-white tracking-wide text-center p-2 mr-1 my-2 bg-accent border-2 border-accent duration-300  hover:bg-white hover:text-accent"
 							href={project.repo}
 							target="_blank"
 							rel="noopener noreferrer"
@@ -73,7 +71,7 @@ export function ProjectItem({
 							Github repo
 						</a>
 						<a
-							className="text-white tracking-wide text-center p-2 ml-1 my-2 bg-accent border-2 border-accent duration-300 ease-in hover:bg-white hover:text-accent"
+							className="text-white tracking-wide text-center p-2 ml-1 my-2 bg-accent border-2 border-accent duration-300  hover:bg-white hover:text-accent"
 							href={project.liveLink}
 							target="_blank"
 							rel="noopener noreferrer"

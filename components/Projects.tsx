@@ -36,7 +36,7 @@ const projects: Projects[] = [
 				linkBlurb: "Data is provided by the ",
 				link: (
 					<a
-						className="uppercase text-accent"
+						className="uppercase text-accent relative after:bg-accent after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-500 cursor-pointer"
 						href="https://api.nookipedia.com/"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -65,7 +65,7 @@ const projects: Projects[] = [
 				linkBlurb: "Trivia questions provided by the ",
 				link: (
 					<a
-						className="uppercase text-accent"
+						className="uppercase  text-accent relative after:bg-accent after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-500 cursor-pointer"
 						href="https://opentdb.com/"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -76,7 +76,7 @@ const projects: Projects[] = [
 				secondLinkBlurb: "Avatars provided by the ",
 				secondLink: (
 					<a
-						className="uppercase text-accent"
+						className="uppercase text-accent relative after:bg-accent after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-500 cursor-pointer"
 						href="https://avatars.dicebear.com/"
 						target="_blank"
 						rel="noopener noreferrer"

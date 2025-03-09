@@ -22,7 +22,7 @@ const navItems: NavItems[] = [
 
 export function NavBar() {
 	return (
-		<nav className="sticky bg-white border-b-1 border-gray-300 top-0 p-6 z-10 text-xl uppercase tracking-wide">
+		<nav className="sticky bg-white border-b-2 border-gray-200 top-0 p-2 z-10 text-l uppercase tracking-wide">
 			<div className="wrapper flex justify-between">
 				<span className="px-8 py-2 ">
 					<a
