@@ -13,7 +13,7 @@ export function Landing() {
 				<h1 className="text-3xl uppercase tracking-widest py-3 sm:py-6 md:text-4xl">
 					michelle w.
 				</h1>
-				<h2 className="text-xl tracking-widest ml-4">Software developer</h2>
+				<h2 className="tracking-widest ml-4">Software developer</h2>
 			</div>
 		</header>
 	);

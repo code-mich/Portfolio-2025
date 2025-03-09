@@ -31,7 +31,7 @@ export function ProjectItem({
 	projectLinks,
 }: Props) {
 	return (
-		<li className="flex flex-col justify-between text-l px-8 my-4 md:flex-row md:px-0 lg:text-xl">
+		<li className="flex flex-col justify-between px-8 my-4 md:flex-row md:px-0">
 			<img
 				src={image}
 				alt={imageAlt}
