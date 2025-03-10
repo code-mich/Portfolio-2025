@@ -29,3 +29,7 @@ body {
 	width: 90%;
 	margin: 0 auto;
 }
+
+.bar {
+	@apply block w-6 h-[0.2rem] my-[0.1rem] bg-black rounded duration-300 transition-all origin-[3px];
+}
