@@ -1,4 +1,5 @@
 import { JSX } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 type Props = {
 	name: string;
@@ -31,9 +32,17 @@ export function ProjectItem({
 	projectLinks,
 }: Props) {
 	return (
-		<li className="flex flex-col justify-between px-8 my-4 md:flex-row md:px-0">
-			<div className="w-2/3 flex justify-center self-center my-2 sm:w-1/3">
-				<img src={image} alt={imageAlt} className="max-h-[27rem] h-auto" />
+		<li
+			key={uuidv4()}
+			className="flex flex-col justify-between p-8 my-4 border-2 border-gray-300 rounded-2xl md:flex-row md:px-0"
+		>
+			<div className="w-2/3 flex justify-center self-center my-2 sm:w-1/3 md:ml-6">
+				<img
+					loading="lazy"
+					src={image}
+					alt={imageAlt}
+					className="max-h-[27rem] h-auto"
+				/>
 			</div>
 			<div className="flex flex-col md:w-2/3 md:mx-8 lg:justify-center xl:w-1/2">
 				<h3 className="text-xl text-center my-2 lg:text-2xl">{name}</h3>
@@ -46,7 +55,7 @@ export function ProjectItem({
 				{/* project blurbs and links */}
 				{projectBlurb.map((project) => {
 					return (
-						<div>
+						<div key={uuidv4()}>
 							<p className="my-2">{project.blurb}</p>
 							<span className="flex flex-wrap my-2">
 								<p className="mr-1">{project.linkBlurb}</p> {project.link}
@@ -61,7 +70,7 @@ export function ProjectItem({
 					);
 				})}
 				{projectLinks.map((project) => (
-					<div className="flex justify-center uppercase mt-2">
+					<div className="flex justify-center uppercase mt-2" key={uuidv4()}>
 						<a
 							className="text-white tracking-wide text-center p-2 mr-1 my-2 bg-accent border-2 border-accent duration-300  hover:bg-white hover:text-accent"
 							href={project.repo}

@@ -1,6 +1,7 @@
 import { NavDesktop } from "./NavDesktop";
 import { NavMobile } from "./NavMobile";
 import { useState, useEffect, useRef } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 type NavItems = {
 	name: string;
@@ -84,6 +85,7 @@ export function NavBar() {
 							<ul className="w-screen absolute bg-gray-200 translate-y-[3rem] z-10">
 								{navItems.map((item) => (
 									<NavMobile
+										key={uuidv4()}
 										itemName={item.name}
 										linkTo={item.href}
 										onClick={() => setshowMenu(!showMenu)}
@@ -99,7 +101,11 @@ export function NavBar() {
 					<>
 						<ul className="flex">
 							{navItems.map((item) => (
-								<NavDesktop itemName={item.name} linkTo={item.href} />
+								<NavDesktop
+									key={uuidv4()}
+									itemName={item.name}
+									linkTo={item.href}
+								/>
 							))}
 						</ul>
 					</>

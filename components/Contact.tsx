@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from "uuid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -46,7 +47,7 @@ export function Contact() {
 					</p>
 					<ul className="flex justify-around mt-4">
 						{links.map((link) => (
-							<li className="flex justify-center w-1/3">
+							<li key={uuidv4()} className="flex justify-center w-1/3">
 								<a
 									className="duration-300  hover:scale-115"
 									href={link.href}

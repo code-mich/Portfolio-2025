@@ -1,5 +1,6 @@
 import { JSX } from "react";
 import { ProjectItem } from "./ProjectItem";
+import { v4 as uuidv4 } from "uuid";
 
 type ProjectBlurb = {
 	blurb: string;
@@ -106,6 +107,7 @@ export function Projects() {
 				<ul className="flex flex-col">
 					{projects.map((project) => (
 						<ProjectItem
+							key={uuidv4()}
 							name={project.name}
 							image={project.image}
 							imageAlt={project.imageAlt}

@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 type Tools = {
 	name: string;
 	icon: string;
@@ -83,7 +85,10 @@ export function Toolbox() {
 				</h2>
 				<ul className="flex flex-wrap my-2">
 					{tools.map((tool) => (
-						<li className="w-1/3 flex flex-col align-center text-center py-3 text-xl sm:w-1/4 lg:w-1/5">
+						<li
+							key={uuidv4()}
+							className="w-1/3 flex flex-col align-center text-center py-3 text-xl sm:w-1/4 lg:w-1/5"
+						>
 							<i className={tool.icon + ` text-5xl text-accent`}></i>
 							<p className="text-base md:text-lg">{tool.name}</p>
 						</li>
