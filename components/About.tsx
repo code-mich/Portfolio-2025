@@ -17,7 +17,7 @@ export function About() {
 					</h2>
 
 					<p className="my-2">
-						I’m a front end developer who builds apps that look and feel
+						I’m a software developer who builds apps that look and feel
 						beautiful. I strive to deliver products that have a terrific user
 						experience, are responsive, and are accessible to as many people as
 						possible while also delivering clean and reusable code.
@@ -34,8 +34,8 @@ export function About() {
 					</p>
 
 					<p className="my-2">
-						When I'm not coding, you can find me drawing, trying new cafes, or
-						browsing all the newest animal videos 🐾
+						When I'm not coding, you can find me hanging out with my dog, trying
+						new cafes, or browsing all the newest animal videos 🐾
 					</p>
 				</div>
 			</div>

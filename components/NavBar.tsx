@@ -14,6 +14,10 @@ const navItems: NavItems[] = [
 		href: "#about",
 	},
 	{
+		name: "work",
+		href: "#work",
+	},
+	{
 		name: "projects",
 		href: "#projects",
 	},
@@ -50,9 +54,9 @@ export function NavBar() {
 	return (
 		<nav className="sticky bg-white border-b-2 border-gray-200 top-0 py-2 z-10 text-l uppercase tracking-wide">
 			<div
-				className={`flex justify-between ${width > breakpoint ? "wrapper" : ""}`}
+				className={`flex justify-between ${width >= breakpoint ? "wrapper" : ""}`}
 			>
-				<span className="mt-3 mx-4 sm:px-8 sm:my-2">
+				<span className="mt-3 mx-4 sm:my-2">
 					<a
 						href="#home"
 						className="font-semibold relative after:bg-black after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-800 cursor-pointer"
@@ -62,7 +66,7 @@ export function NavBar() {
 				</span>
 
 				{/* Mobile hamburger nav */}
-				{width < breakpoint && (
+				{width <= breakpoint && (
 					<>
 						<div ref={ref} className="mx-4">
 							<button
