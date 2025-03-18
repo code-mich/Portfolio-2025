@@ -31,6 +31,14 @@ const tools: Tools[] = [
 		icon: "devicon-nodejs-plain",
 	},
 	{
+		name: "Express",
+		icon: "devicon-express-original",
+	},
+	{
+		name: "PostgreSQL",
+		icon: "devicon-postgresql-plain",
+	},
+	{
 		name: "TailwindCSS",
 		icon: "devicon-tailwindcss-original",
 	},
