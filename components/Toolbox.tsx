@@ -39,6 +39,10 @@ const tools: Tools[] = [
 		icon: "devicon-postgresql-plain",
 	},
 	{
+		name: "Prisma",
+		icon: "devicon-prisma-original",
+	},
+	{
 		name: "TailwindCSS",
 		icon: "devicon-tailwindcss-original",
 	},

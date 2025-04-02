@@ -14,7 +14,7 @@ const workExp: WorkExp[] = [
 		company: "The Rumie Initiative",
 		title: "Software Developer",
 		location: "Vancouver, BC - Remote",
-		date: "September 2022 - July 2023",
+		date: "September 2022 - August 2023",
 		bullets: [
 			"Designed and implemented core UI features while enhancing SEO for Rumie Learn and Rumie Build using modern technologies such as Vue.js, Nuxt.js, TailwindCSS, Node.js, and Firebase.",
 			"Revamped the Rumie Build onboarding process, delivering a more intuitive and streamlined experience tailored to diverse user personas.",
